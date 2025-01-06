@@ -13,6 +13,7 @@ export interface CouponDiscount {
 }
 
 export interface OnTopDiscount {
+    type: string;
     category: string;
     percentage: number; // Percentage discount for a specific category
 }

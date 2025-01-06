@@ -2,7 +2,7 @@ import { useState } from "react";
 import { CartItem } from "./Interface/discount";
 import Cart from "./Cart";
 
-function ItemCard() {
+function Items() {
     const [cartItems, setCartItems] = useState<CartItem[]>([
         { id: 1, name: "T-Shirt", category: "Clothing", price: 350, amount: 0 },
         { id: 2, name: "Hoodie", category: "Clothing", price: 700, amount: 0 },
@@ -74,15 +74,9 @@ function ItemCard() {
                 </p>
             </div>
 
-            {/* <div className="mt-6 flex justify-center">
-                <button className="px-6 py-3 bg-green-500 text-white rounded shadow-sm text-lg font-medium hover:bg-green-600">
-                    Proceed to Checkout
-                </button>
-            </div> */}
-
             <Cart details={cartItems} />
         </div>
     );
 }
 
-export default ItemCard;
+export default Items;
